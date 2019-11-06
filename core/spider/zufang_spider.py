@@ -7,13 +7,11 @@
 import re
 import threadpool
 from bs4 import BeautifulSoup
-from lib.item.zufang import *
-from lib.spider.base_spider import *
+from core.item.zufang import *
 from lib.utility.date import *
 from lib.utility.path import *
 from lib.zone.area import *
 from lib.zone.city import get_city
-import lib.utility.version
 
 
 class ZuFangBaseSpider(BaseSpider):

@@ -5,9 +5,9 @@
 # 板块信息相关函数
 
 from lib.zone.district import *
-from lib.const.xpath import *
+from core.const.xpath import *
 from lib.request.headers import *
-from lib.spider.base_spider import SPIDER_NAME
+from core.spider import SPIDER_NAME
 
 
 def get_district_url(city, district):

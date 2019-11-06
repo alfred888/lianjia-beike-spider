@@ -6,15 +6,13 @@
 
 import re
 import threadpool
+from core.const.setting import *
 from bs4 import BeautifulSoup
-from lib.item.ershou import *
+from core.item.ershou import *
 from lib.zone.city import get_city
-from lib.spider.base_spider import *
 from lib.utility.date import *
 from lib.utility.path import *
 from lib.zone.area import *
-from lib.utility.log import *
-import lib.utility.version
 
 
 class ErShouSpider(BaseSpider):
@@ -62,7 +60,7 @@ class ErShouSpider(BaseSpider):
         page = 'http://{0}.{1}.com/ershoufang/{2}/'.format(city_name, SPIDER_NAME, area_name)
         print(page)  # 打印版块页面地址
         headers = create_headers()
-        response = requests.get(page, timeout=10, headers=headers)
+        response = requests.get(page, timeout=REQUEST_TIMEOUT, headers=headers)
         html = response.content
         soup = BeautifulSoup(html, "lxml")
 

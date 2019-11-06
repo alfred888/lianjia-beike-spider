@@ -7,14 +7,12 @@
 import re
 import threadpool
 from bs4 import BeautifulSoup
-from lib.item.xiaoqu import *
+from core.item.xiaoqu import *
 from lib.zone.city import get_city
-from lib.spider.base_spider import *
 from lib.utility.date import *
 from lib.utility.path import *
 from lib.zone.area import *
 from lib.utility.log import *
-import lib.utility.version
 
 
 class XiaoQuBaseSpider(BaseSpider):

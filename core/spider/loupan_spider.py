@@ -8,14 +8,11 @@ import re
 import math
 import requests
 from bs4 import BeautifulSoup
-from lib.item.loupan import *
-from lib.spider.base_spider import *
+from core.item.loupan import *
 from lib.request.headers import *
 from lib.utility.date import *
 from lib.utility.path import *
 from lib.zone.city import get_city
-from lib.utility.log import *
-import lib.utility.version
 
 
 class LouPanBaseSpider(BaseSpider):

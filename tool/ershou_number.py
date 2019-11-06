@@ -5,7 +5,7 @@
 # 获取城市挂牌二手房数量
 
 import time
-from lib.spider.base_spider import SPIDER_NAME
+from core.spider import SPIDER_NAME
 from bs4 import BeautifulSoup
 from lib.zone.city import cities
 import requests

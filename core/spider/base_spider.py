@@ -11,7 +11,7 @@ from lib.utility.date import *
 import lib.utility.version
 import random
 
-thread_pool_size = 5
+thread_pool_size = 2
 
 # 防止爬虫被禁，随机延迟设定
 # 如果不想delay，就设定False，

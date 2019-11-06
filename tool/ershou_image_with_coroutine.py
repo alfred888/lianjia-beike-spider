@@ -14,7 +14,7 @@ import time
 from lib.zone.city import get_chinese_city
 from lib.request.headers import create_headers
 from lib.utility.date import get_date_string
-from lib.spider.base_spider import SPIDER_NAME
+from core.spider import SPIDER_NAME
 from lib.utility.path import DATA_PATH
 
 
